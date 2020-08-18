@@ -1,8 +1,8 @@
 # PdfTempura
 
-[![Code Climate](https://codeclimate.com/github/allcrux/pdf_tempura.png)](https://codeclimate.com/github/allcrux/pdf_tempura)
-[![Build Status](https://travis-ci.org/allcrux/pdf_tempura.png?branch=master)](https://travis-ci.org/allcrux/pdf_tempura)
-[![Dependency Status](https://gemnasium.com/allcrux/pdf_tempura.png)](https://gemnasium.com/allcrux/pdf_tempura)
+[![Code Climate](https://codeclimate.com/github/koenhandekyn/pdf_tempura.png)](https://codeclimate.com/github/koenhandekyn/pdf_tempura)
+<!-- [![Build Status](https://travis-ci.org/allcrux/pdf_tempura.png?branch=master)](https://travis-ci.org/allcrux/pdf_tempura) -->
+<!-- [![Dependency Status](https://gemnasium.com/allcrux/pdf_tempura.png)](https://gemnasium.com/allcrux/pdf_tempura) -->
 
 A gem for overlaying text and other fields onto PDF templates using Prawn.
 
