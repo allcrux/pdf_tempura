@@ -20,22 +20,22 @@ describe PdfTempura::Extensions::Hash::StringifyKeys do
   describe "#stringify_keys" do
     example do
       result = subject.stringify_keys
-      result["foo"].should be_true
-      result["bar"].should == { "blah" => "abc" }
-      result["woo"].should == [1, { "blorgh" => false }]
+      expect(result["foo"]).to be true
+      expect(result["bar"]).to eq ({ "blah" => "abc" })
+      expect(result["woo"]).to eq ([1, { "blorgh" => false }])
 
-      subject["foo"].should be_nil
-      subject["bar"].should be_nil
-      subject["woo"].should be_nil
+      expect(subject["foo"]).to be nil
+      expect(subject["bar"]).to be nil
+      expect(subject["woo"]).to be nil
     end
   end
 
   describe "#stringify_keys!" do
     example do
       subject.stringify_keys!
-      subject["foo"].should be_true
-      subject["bar"].should == { "blah" => "abc" }
-      subject["woo"].should == [1, { "blorgh" => false }]
+      expect(subject["foo"]).to be true
+      expect(subject["bar"]).to eq ({ "blah" => "abc" })
+      expect(subject["woo"]).to eq ([1, { "blorgh" => false }])
     end
   end
 

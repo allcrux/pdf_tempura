@@ -5,13 +5,14 @@ shared_examples_for "a document field" do
   let(:coordinates){ [10, 20] }
   let(:dimensions){ [200, 100] }
 
-  its(:name){ should == "name" }
-  its(:coordinates){ should == [10, 20] }
-  its(:dimensions){ should == [200, 100] }
-  its(:x){ should == 10 }
-  its(:y){ should == 20 }
-  its(:width){ should == 200 }
-  its(:height){ should == 100 }
+  it { expect(subject.name).to eq  "name" }
+  it { expect(subject.name).to eq "name" }
+  it { expect(subject.coordinates).to eq  [10, 20] }
+  it { expect(subject.dimensions).to eq  [200, 100] }
+  it { expect(subject.x).to eq  10 }
+  it { expect(subject.y).to eq  20 }
+  it { expect(subject.width).to eq  200 }
+  it { expect(subject.height).to eq  100 }
 
 end
 

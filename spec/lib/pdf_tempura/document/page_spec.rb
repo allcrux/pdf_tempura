@@ -4,8 +4,8 @@ describe PdfTempura::Document::Page do
 
   subject{ described_class.new(100) }
 
-  its(:number){ should == 100 }
-  its(:fields){ should == [] }
+  it { expect(subject.number).to eq  100 }
+  it { expect(subject.fields).to eq  [] }
 
   it_behaves_like "a field that accepts default commands"
 

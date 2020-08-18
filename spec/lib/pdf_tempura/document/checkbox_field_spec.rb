@@ -13,12 +13,12 @@ describe PdfTempura::Document::CheckboxField do
 
   subject{ described_class.new(name, coordinates, dimensions, options) }
 
-  its(:default_value){ should be_true }
+  it { expect(subject.default_value).to eq true }
 
   describe "defaults" do
     subject{ described_class.new(name, coordinates, dimensions) }
 
-    its(:default_value){ should be_false }
+    it { expect(subject.default_value).to eq false }
   end
 
   describe "validation" do
@@ -38,10 +38,10 @@ describe PdfTempura::Document::CheckboxField do
           }.to raise_error ArgumentError, "Default_value must be one of the following values: true, false."
         end
       end
-      
+
       context "padding" do
         let(:padding){[3,2,1]}
-        
+
         it "throws an error" do
           expect{
             described_class.new(name, coordinates, dimensions, options)
