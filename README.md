@@ -1,9 +1,8 @@
 # PdfTempura
 
-[![Code Climate](https://codeclimate.com/github/payrollhero/pdf_tempura.png)](https://codeclimate.com/github/payrollhero/pdf_tempura)
-[![Build Status](https://travis-ci.org/payrollhero/pdf_tempura.png?branch=master)](https://travis-ci.org/payrollhero/pdf_tempura)
-[![Dependency Status](https://gemnasium.com/payrollhero/pdf_tempura.png)](https://gemnasium.com/payrollhero/pdf_tempura)
-
+[![Code Climate](https://codeclimate.com/github/allcrux/pdf_tempura.png)](https://codeclimate.com/github/allcrux/pdf_tempura)
+[![Build Status](https://travis-ci.org/allcrux/pdf_tempura.png?branch=master)](https://travis-ci.org/allcrux/pdf_tempura)
+[![Dependency Status](https://gemnasium.com/allcrux/pdf_tempura.png)](https://gemnasium.com/allcrux/pdf_tempura)
 
 A gem for overlaying text and other fields onto PDF templates using Prawn.
 
@@ -37,7 +36,7 @@ Specify your template using:
 
 #### Specifying pages
 
-The `page` method can be used to specify a page. It takes number to specify the page, 
+The `page` method can be used to specify a page. It takes number to specify the page,
 and a block where you specify your fields.
 
 You may also specify default options for layout by passing them into the "page" method.
@@ -276,7 +275,7 @@ data_hash = {
 my_pdf = MyPdf.new(data_hash)
 ```
 
-You can override group values by including the key in a specific page's data hash. Keys can be either strings or symbols. 
+You can override group values by including the key in a specific page's data hash. Keys can be either strings or symbols.
 
 #### Rendering your overlayed PDF
 

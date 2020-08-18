@@ -6,11 +6,11 @@ require 'pdf_tempura/version'
 Gem::Specification.new do |spec|
   spec.name          = "pdf_tempura"
   spec.version       = PdfTempura::VERSION
-  spec.authors       = ["Dane Natoli"]
-  spec.email         = ["dnatoli@payrollhero.com"]
+  spec.authors       = ["Dane Natoli, Koen Handekyn"]
+  spec.email         = ["dnatoli@payrollhero.com, koen@handekyn.com"]
   spec.description   = %q{A gem for overlaying text and other fields onto PDF templates using Prawn.}
   spec.summary       = %q{A gem for overlaying text and other fields onto PDF templates using Prawn.}
-  spec.homepage      = "https://github.com/payrollhero/pdf_tempura"
+  spec.homepage      = "https://github.com/allcrux/pdf_tempura"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
